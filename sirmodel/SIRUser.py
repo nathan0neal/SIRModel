@@ -1,6 +1,7 @@
 from scipy.integrate import odeint
 from pylab import *
 import tkinter as tk
+'@author:nathan bouret'
 
 ################################################################ interface
 master = tk.Tk()

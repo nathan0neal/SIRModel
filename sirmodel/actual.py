@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+'@author:nathan bouret'
 
 CH = np.genfromtxt("germanyrawdata.csv", delimiter=";", skip_header=1)
 for i in range(CH.__len__() - 1, -1, -1):

@@ -1,5 +1,6 @@
 from scipy.integrate import odeint
 from pylab import *
+'@author:nathan bouret'
 
 N = 10000  # population totale
 I = 1  # Nombre de cas infecte 1er jour

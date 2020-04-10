@@ -1,4 +1,5 @@
 import tkinter as tk
+'@author:nathan bouret'
 
 master = tk.Tk()
 master.geometry("400x200")
