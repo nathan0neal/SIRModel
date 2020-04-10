@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import END
 
 master = tk.Tk()
 master.geometry("400x200")

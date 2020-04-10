@@ -1,6 +1,4 @@
-import numpy as np
 from scipy.integrate import odeint
-import matplotlib.pyplot as plt
 from pylab import *
 import tkinter as tk
 
@@ -108,8 +106,3 @@ tk.Button(master,
 
 master.mainloop()
 tk.mainloop()
-
-#### il faut le rendre fool proof
-
-##### ameliorer la fonctionalité quit()
-
