@@ -111,5 +111,5 @@ tk.mainloop()
 
 #### il faut le rendre fool proof
 
-##### ameliorer la fonctionalité quit
+##### ameliorer la fonctionalité quit()
 
