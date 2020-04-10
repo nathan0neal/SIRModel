@@ -29,7 +29,7 @@ x1 = [S, I, R]  #paraminitiaux
 rates = (beta, gamma) #les taux
 sol = odeint(SIR, x1, x, args=rates)
 
-# Plot ODE solutions
+# Solutions des EDO
 plt.plot(x, sol[:, 0])
 plt.plot(x, sol[:, 1])
 plt.plot(x, sol[:, 2])
