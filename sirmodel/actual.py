@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
 '@author:nathan bouret'
 
 CH = np.genfromtxt("germanyrawdata.csv", delimiter=";", skip_header=1)
@@ -24,7 +25,7 @@ plt.show()
 
 NBMalCUM = np.flip(np.flip(B).cumsum())
 # on defini un exposed theo en choisissant Ro autour de 2
-Expo = 2*NBMalCUM
+Expo = 2 * NBMalCUM
 plt.plot(A, NBMalCUM, color="red")
 plt.show()
 
@@ -47,6 +48,21 @@ legend = plt.legend()
 legend.get_frame().set_alpha(0.5)
 plt.show()
 
+# mort moyenne avril
+moyavr = np.mean(CH[:8,0])
+print(moyavr)
+
+# mort moyennn mars
+moymar = np.mean(CH[9:40,1])
+print(moymar)
+
+# mort moyenne fevrier
+
+
+# mort moyenne janvier
+moyjan = np.mean(CH[0:31])
+print(sum(CH[:,1]))
+#print(CH)
 # mort cumulé
 # plt.plot(CH,[0,1])
 # plt.show()
