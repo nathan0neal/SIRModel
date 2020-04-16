@@ -21,9 +21,9 @@ def condition2(index):
         return True
 
 
-df = pd.read_csv(url, skiprows=lambda x: condition(x), index_col=0, parse_dates=[0])
-df2 = pd.read_csv(url2, skiprows=lambda x: condition(x), index_col=0, parse_dates=[0])
-df3 = pd.read_csv(url3, skiprows=lambda x: condition2(x), index_col=0, parse_dates=[0])
+df = pd.read_csv(url, skiprows=lambda x: condition(x), index_col=0)
+df2 = pd.read_csv(url2, skiprows=lambda x: condition(x), index_col=0)
+df3 = pd.read_csv(url3, skiprows=lambda x: condition2(x), index_col=0)
 
 df.to_csv('rawdata1.csv', index=False, encoding='utf-8')
 df2.to_csv('rawdata1.csv', index=False, encoding='utf-8', mode='a')  # permet ecriture
