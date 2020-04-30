@@ -21,9 +21,12 @@ def condition2(index):
         return True
 
 
-df = pd.read_csv(url, skiprows=lambda x: condition(x), index_col=0)
-df2 = pd.read_csv(url2, skiprows=lambda x: condition(x), index_col=0)
-df3 = pd.read_csv(url3, skiprows=lambda x: condition2(x), index_col=0)
+df = pd.read_csv(url, delimiter=",", decimal=".")
+a=df.values[121]
+df2 = pd.read_csv(url, delimiter=",", decimal=".")
+b=df2.values[121]
+df3 = pd.read_csv(url, delimiter=",", decimal=".")
+c=df3.values[113]
 
 df.to_csv('rawdata1.csv', index=False, encoding='utf-8')
 df2.to_csv('rawdata1.csv', index=False, encoding='utf-8', mode='a')  # permet ecriture

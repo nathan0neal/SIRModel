@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 '@author:nathan bouret'
 
-CH = np.genfromtxt("germanyrawdata.csv", delimiter=";", skip_header=1)
+CH = np.genfromtxt("/Users/bouret/PycharmProjects/Covid19/germanyrawdata.csv", delimiter=";", skip_header=1)
 for i in range(CH.__len__() - 1, -1, -1):
     CH[i, 0] = CH.__len__() - (i + 1)
 # print(CH)
